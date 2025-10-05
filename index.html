@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indian Chowk — Urban Dhawa</title>
+  <meta name="description" content="Indian Chowk Urban Dhawa — Classic vegetarian Indian restaurant. Menus, story, reservations, contact and gallery.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%8D%9A%3C/text%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#faf5ef; --card:#fff; --accent:#8b3a28; --muted:#6b5a57; --gold:#d9b44a;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial; margin:0; color:#333; background:var(--bg);}
+    header{background:linear-gradient(90deg, rgba(139,58,40,0.95), rgba(217,180,74,0.95)); color:white; padding:28px 16px}
+    .container{max-width:var(--maxw); margin:0 auto; padding:20px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:64px;height:64px;border-radius:8px;background:var(--card);display:flex;align-items:center;justify-content:center;font-family:Merriweather;font-weight:700;color:var(--accent);box-shadow:0 4px 10px rgba(0,0,0,0.08)}
+    nav{margin-left:auto}
+    .nav-links{display:flex;gap:16px;align-items:center}
+    .nav-links a{color:inherit;text-decoration:none;font-weight:600}
+    .hero{display:flex;flex-wrap:wrap;align-items:center;gap:20px;padding:28px 0}
+    .hero-text{flex:1;min-width:260px}
+    h1{font-family:Merriweather;font-size:32px;margin:0 0 8px}
+    p.lead{margin:0 0 16px;color:var(--muted)}
+    .cta{display:inline-block;background:var(--card);color:var(--accent);padding:10px 16px;border-radius:8px;font-weight:700;text-decoration:none;box-shadow:0 4px 8px rgba(0,0,0,0.08)}
+
+    /* grid */
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+    .muted{color:var(--muted);font-size:14px}
+
+    /* Menu */
+    .menu-section h2{margin-top:0;font-family:Merriweather}
+    .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .menu-item{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #eee}
+    .price{font-weight:700}
+
+    /* gallery */
+    .gallery{display:flex;gap:8px;flex-wrap:wrap}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+    /* reservation form */
+    form input, form select, form textarea{width:100%;padding:10px;margin:6px 0 12px;border:1px solid #e6e0db;border-radius:8px}
+    form button{background:var(--accent);color:white;border:none;padding:10px 16px;border-radius:8px;font-weight:700}
+
+    footer{padding:20px 0;color:var(--muted);text-align:center;font-size:14px}
+
+    /* responsive */
+    @media(max-width:900px){.grid-3{grid-template-columns:1fr 1fr}.menu-grid{grid-template-columns:1fr}.hero{flex-direction:column}.nav-links{display:none}.logo{width:56px;height:56px}}
+    @media(max-width:520px){.grid-3{grid-template-columns:1fr}.container{padding:12px}.hero-text h1{font-size:26px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand">
+        <div class="logo">IC</div>
+        <div>
+          <div style="font-weight:700">Indian Chowk</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.9)">Urban Dhawa — Pure Vegetarian</div>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-links">
+          <a href="#menu">Menu</a>
+          <a href="#story">Our Story</a>
+          <a href="#reservation">Reservation</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Indian Chowk — Urban Dhawa</h1>
+        <p class="lead">A traditional vegetarian dhaba experience with carefully preserved recipes, handcrafted breads, and homely slow-cooked curries. We celebrate regional Indian flavors in a warm, urban setting.</p>
+        <a class="cta" href="#reservation">Reserve a table</a>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <div class="card">
+          <h3 style="margin-top:0">Hours & Info</h3>
+          <p class="muted">Open daily • Breakfast to late evening</p>
+          <ul class="muted" style="padding-left:18px;margin:8px 0">
+            <li>Mon–Sun: 08:00 AM — 12:30 AM</li>
+            <li>Address: Suhagpur kolar road (Bhopal)</li>
+            <li>Phone: +91 90743 68128/li>
+          </ul>
+          <p style="margin:0"><strong>Cuisine:</strong> Pure Vegetarian — North & Regional Indian classics</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="card" style="margin-top:18px">
+      <h2>Our Story</h2>
+      <p class="muted">Indian Chowk began as a small food stall at the city market decades ago. Passed down through two generations, our recipes focus on seasonal produce, slow-cooked gravies, and traditional spice blends. We remain faithful to methods that honor the past: stone-ground spices, hand-rolled breads and a simple hospitality that makes every guest feel at home.</p>
+    </section>
+
+    <section id="menu" class="menu-section" style="margin-top:18px">
+      <div style="display:flex;gap:18px;flex-wrap:wrap">
+        <div style="flex:1;min-width:320px" class="card">
+          <h2>Menu — Vegetarian Classics</h2>
+          <div class="menu-grid">
+            <div>
+              <h3 style="margin-bottom:6px">Starters</h3>
+              <div class="menu-item"><div>Aloo Tikki</div><div class="price">₹120</div></div>
+              <div class="menu-item"><div>Paneer Tikka</div><div class="price">₹220</div></div>
+              <div class="menu-item"><div>Hara Bhara Kebab</div><div class="price">₹160</div></div>
+              <div class="menu-item"><div>Masala Papad</div><div class="price">₹70</div></div>
+            </div>
+            <div>
+              <h3 style="margin-bottom:6px">Mains & Breads</h3>
+              <div class="menu-item"><div>Dal Makhani</div><div class="price">₹220</div></div>
+              <div class="menu-item"><div>Paneer Butter Masala</div><div class="price">₹260</div></div>
+              <div class="menu-item"><div>Mixed Vegetable Curry</div><div class="price">₹200</div></div>
+              <div class="menu-item"><div>Assorted Indian Breads (Tandoori Roti / Naan / Laccha Paratha)</div><div class="price">₹60–₹120</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="flex:1;min-width:260px" class="card">
+          <h2>Signature Plates</h2>
+          <p class="muted">Plates that define our kitchen — rich, balanced and rooted in tradition.</p>
+          <div class="menu-item"><div>Thali — Traditional Seasonal Thali</div><div class="price">₹320</div></div>
+          <div class="menu-item"><div>Chole Bhature</div><div class="price">₹210</div></div>
+          <div class="menu-item"><div>Vegetable Biryani (served with raita)</div><div class="price">₹240</div></div>
+          <h3 style="margin-top:12px">Desserts & Beverages</h3>
+          <div class="menu-item"><div>Gajar Halwa</div><div class="price">₹110</div></div>
+          <div class="menu-item"><div>Rasgulla</div><div class="price">₹90</div></div>
+          <div class="menu-item"><div>Masala Chai / Filter Coffee</div><div class="price">₹40</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:18px">
+      <div class="grid-3">
+        <div class="card">
+          <h3>Why Choose Us</h3>
+          <p class="muted">We use fresh local produce, preserve time-honored spice blends, and maintain a warm, hospitable atmosphere. Perfect for family meals and small gatherings.</p>
+        </div>
+        <div class="card">
+          <h3>Private Events</h3>
+          <p class="muted">Small banquets and catered platters available. Traditional menus on request.</p>
+        </div>
+        <div class="card">
+          <h3>Gallery</h3>
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1548943487-a2e4d7a86f19?auto=format&fit=crop&w=800&q=60" alt="dish">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=60" alt="breads">
+            <img src="https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&w=800&q=60" alt="restaurant interior">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservation" class="card" style="margin-top:18px">
+      <h2>Reservation</h2>
+      <p class="muted">Fill the form below to reserve a table. We will confirm via phone.</p>
+      <form id="resForm" onsubmit="return handleReservation(event)">
+        <label>Name</label>
+        <input type="text" id="rname" required placeholder="Full name">
+        <label>Phone</label>
+        <input type="tel" id="rphone" required placeholder="e.g. +91 98xxxx">
+        <label>Date & Time</label>
+        <input type="datetime-local" id="rdatetime" required>
+        <label>Guests</label>
+        <select id="rguests">
+          <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+        </select>
+        <label>Notes (optional)</label>
+        <textarea id="rnotes" rows="3" placeholder="Any dietary notes or requests"></textarea>
+        <button type="submit">Request Reservation</button>
+        <p id="rmsg" class="muted" style="margin-top:10px"></p>
+      </form>
+    </section>
+
+    <section id="contact" style="margin-top:18px" class="card">
+      <h2>Contact & Location</h2>
+      <p class="muted">For enquiries, events or press, reach us at:</p>
+      <p style="margin:6px 0"><strong>Phone:</strong> +91 98765 43210</p>
+      <p style="margin:6px 0"><strong>Email:</strong> hello@indianchowk.example</p>
+      <p style="margin:6px 0"><strong>Address:</strong> 24 Chowk Lane, Old Market District, City (sample address)</p>
+      <div style="margin-top:10px;border-radius:8px;overflow:hidden">
+        <!-- Placeholder map (replace src with your Google Maps embed URL) -->
+        <iframe width="100%" height="260" src="https://maps.google.com/maps?q=New%20Delhi&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© Indian Chowk Urban Dhawa — Traditional vegetarian recipes</div>
+        <div class="muted">Follow us: Instagram · Facebook · Twitter</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleReservation(e){
+      e.preventDefault();
+      const name=document.getElementById('rname').value.trim();
+      const phone=document.getElementById('rphone').value.trim();
+      const dt=document.getElementById('rdatetime').value;
+      const msgEl=document.getElementById('rmsg');
+      if(!name||!phone||!dt){ msgEl.textContent='Please complete all required fields.'; return false }
+      // Simple validation passed — show confirmation and mimic send
+      msgEl.textContent='Reservation request received. We will call to confirm within 24 hours.';
+      // Reset form after short delay to simulate submission
+      setTimeout(()=>{ document.getElementById('resForm').reset(); },1200);
+      return false;
+    }
+  </script>
+</body>
+                </html>
+                
